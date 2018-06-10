@@ -1,0 +1,149 @@
+﻿@model IEnumerable<GoogleDrive.EF.BaiHat>
+@{
+
+    var music = (List<GoogleDrive.EF.SoHuu>)ViewBag.MyMusic;
+}
+<div class="w3-container">
+    <h2>Một sản phẩm của Quang Vũ</h2>
+   
+</div>
+
+<div class="w3-content w3-display-container">
+
+    <div class="w3-display-container mySlides">
+        <img src="https://zmp3-photo.zadn.vn/banner/4/8/2/5/482561d825994134ff97ae6de094ada5.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            Sử dụng API drive google
+        </div>
+    </div>
+
+    <div class="w3-display-container mySlides">
+        <img src="https://zmp3-photo.zadn.vn/banner/3/0/6/7/30672091c86b80cd91b645d131727932.jpg" style="width:100%">
+        <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+            Website nghe nhạc
+        </div>
+    </div>
+
+    <div class="w3-display-container mySlides">
+        <img src="https://zmp3-photo.zadn.vn/banner/0/3/0/f/030febe924725713c6c0fa176b07c071.jpg" style="width:100%">
+        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+            WarterMarking Audio
+        </div>
+    </div>
+
+
+    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+
+
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tên bài hát</th>
+            <th>Tác giả </th>
+            <th>Mua</th>
+            <th>Download</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            var mua = 0;
+            foreach (var i in music)
+            {
+                if (item.IdDrive == i.Idbaihat)
+                {
+                    mua = 1;
+                }
+            }
+
+            <tr>
+                <td><a href="@Url.Action("NgheNhac","Home",new { id = item.IdDrive})">@item.TenBaiHat</a></td>
+                <td>@item.Author</td>
+                <td>
+                    @if (mua == 1)
+                    {
+                        <h5>Đã mua</h5>
+                    }
+                    else
+                    {
+                        <h5>
+                            @Ajax.ActionLink("Mua", "Buy", new { @id = item.ID }, new AjaxOptions
+                            {
+                                Confirm = "Mua nhạc?",
+                                OnComplete = "$('" + item.ID + "').buy()",
+                                HttpMethod = "Post"
+                            })
+                        </h5>
+                    }
+
+
+                </td>
+                <td>
+                    @if (mua == 1)
+                    {
+                        <h5>
+                            @Ajax.ActionLink("Download", "DownloadFile", new { @id = item.IdDrive }, new AjaxOptions
+                            {
+                                Confirm = "Tải về ?",
+                                OnComplete = "$('" + item.IdDrive + "').download()",
+                                HttpMethod = "Post"
+                            }
+                            )
+                    </h5>
+                }
+
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>API Google Drive</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>WaterMarking Audio</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Website using ASP.NET</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
