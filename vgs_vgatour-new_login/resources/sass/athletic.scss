@@ -1,0 +1,305 @@
+.content-page {
+
+    text-align: left;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+
+    .search_athletic {
+        color: #4a4a4a;
+        margin-bottom: 40px;
+        padding: 12px 12px 8px;
+        min-width: 300px;
+        border: 2px solid #c4c4c4;
+
+        &:focus {
+            outline: unset !important;
+        }
+    }
+
+}
+
+.list-athletic {
+
+    .row-athletic {
+        margin-bottom: 30px;
+    }
+
+    .item-athletic {
+        border-radius: 5px;
+        position: relative;
+        margin-bottom: 30px;
+
+        .avatar-place {
+
+            width: 200px;
+            height: 250px;
+
+            img {
+                border: 2px solid #b6b6b6;
+                border-radius: 5px;
+                height: 100%;
+                width: auto;
+            }
+
+        }
+
+    }
+
+}
+
+.info-athletic {
+    color: white;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #b6b6b6;
+    border-top: 0px;
+
+    .name-athletic {
+        border-bottom: 2px solid #fff;
+        margin-bottom: 4px;
+        line-height: 1.75rem;
+    }
+
+    .country-place {
+
+        display: flex;
+        justify-content: space-between;
+
+        .country {
+            margin: auto 0px;
+            font-size: 12px;
+        }
+
+        .flag-athletic {
+            width: 24px;
+            height: auto;
+        }
+
+    }
+
+}
+
+.search_athletic {
+    float: left;
+}
+
+.tab-athletic {
+    margin-left: 150px;
+    float: left;
+    list-style-type: none;
+
+    li {
+        padding: 16px 50px;
+        display: inline-block;
+
+        a {
+            color: #262D48;
+            text-decoration: none;
+        }
+
+        &.active {
+            font-weight: bold;
+
+            a {
+                border-bottom: 2px solid #262D48;
+            }
+        }
+
+    }
+}
+
+.info-athletic-place {
+
+    .info-detail-athletic {
+
+        display: flex;
+        flex-direction: row;
+
+        .avatar-athletic {
+            border: 4px solid #dcdcdc;
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+            margin: auto 1rem;
+            border-radius: 50%;
+        }
+
+    }
+}
+
+
+.info-athletic-view {
+
+    .name-athletic {
+        font-size: 2rem;
+        border-bottom: 2px solid black;
+    }
+
+    .country-athletic {
+        font-size: 0.875rem;
+    }
+
+    .list-info-athletic {
+        list-style-type: none;
+
+        .item-info-athletic {
+            display: inline-block;
+            width: 33%;
+        }
+    }
+
+}
+
+.list-timeline-athletic {
+    margin-top: 1rem;
+    padding-left: 10rem;
+
+    ul {
+        list-style-type: disc;
+    }
+}
+
+
+.tournament-score-view {
+
+    margin-bottom: 50px;
+
+    .item-score-view {
+        color: #000;
+        width: 100%;
+        position: relative;
+        border: 1px solid #b6b6b6;
+        padding: 50px 30px;
+
+        .title-score-view {
+
+            .facility_score-view-tournament {
+                position: absolute;
+                top: -3%;
+                background-color: white;
+                padding: 0px 20px;
+                left: 5%;
+            }
+
+            .time-tournament {
+                position: absolute;
+                top: -3%;
+                background-color: white;
+                padding: 0px 20px;
+                right: 5%;
+            }
+
+
+        }
+
+        .item-content-score-view {
+            border: 1px solid #b6b6b6;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+            padding-top: 16px;
+            padding-bottom: 16px;
+            margin-bottom: 30px;
+
+            div {
+                margin: auto;
+            }
+
+            .time-detail, .cost-score-view {
+                flex-grow: 1;
+            }
+
+            .address-score-view {
+                flex-grow: 2;
+                text-align: left;
+                margin: auto 40px !important;
+
+                p {
+                    margin-bottom: 0.65rem;
+                }
+            }
+
+            .seperate-score-view {
+                background-color: #b6b6b6;
+                border-radius: 10px;
+                height: 60px;
+                width: 6px;
+                content: '';
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+    }
+
+}
+
+
+.item-score-award {
+    float: right;
+    margin-bottom: 50px;
+
+
+    li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .icon-score-award {
+        display: inline-block;
+    }
+}
+
+.table-score-athletic {
+
+    th, td {
+
+        border-top: unset;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    tbody tr:nth-of-type(even) {
+        background-color: rgba(0, 0, 0, .05);
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .content-page {
+        padding: 0px !important;
+    }
+
+    .list-athletic .item-athletic .avatar-place {
+
+        width: 100%;
+        height: auto;
+        min-height: 205px;
+
+        .avatar-golfer {
+            width: 100%;
+            height: auto;
+            min-height: 205px;
+        }
+
+    }
+
+    .item-athletic {
+        margin-bottom: 15px !important;
+    }
+
+    .info-athletic {
+        width: 100%;
+        //border: 2px solid #b6b6b6;
+        //border-top: 0px;
+    }
+
+    .search_athletic {
+        width: 100%;
+    }
+
+}

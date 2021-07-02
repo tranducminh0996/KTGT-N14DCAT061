@@ -1,0 +1,104 @@
+.content-page {
+
+    .tournament-schedule {
+
+        .item-schedule {
+            color: #231f20;
+            width: 100%;
+            position: relative;
+            border: 1px solid #b6b6b6;
+            padding: 60px 40px;
+
+            .title-schedule {
+
+                .facility_schedule-tournament {
+                    position: absolute;
+                    top: -1.5%;
+                    background-color: white;
+                    padding: 0px 20px;
+                    left: 5%;
+                }
+
+                .time-tournament {
+                    position: absolute;
+                    top: -3%;
+                    background-color: white;
+                    padding: 0px 20px;
+                    right: 5%;
+                }
+
+
+            }
+
+            .item-content-schedule {
+                border: 1px solid #b6b6b6;
+                border-radius: 20px;
+                box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+                padding-top: 16px;
+                padding-bottom: 16px;
+                margin-bottom: 30px;
+                text-align: left;
+
+                .time-detail, .cost-schedule {
+                    margin: auto 0px;
+                    text-align: center;
+                    min-width: 25%;
+                    display: inline-block;
+                    font-style: italic;
+                }
+
+                .address-schedule {
+                    display: inline-block;
+                    text-align: left;
+                    margin: auto 40px;
+
+                    p {
+                        margin-bottom: 0.65rem;
+                    }
+                }
+
+                .seperate-schedule {
+                    display: inline-block;
+                    background-color: #b6b6b6;
+                    border-radius: 10px;
+                    height: 60px;
+                    width: 6px;
+                    content: '';
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .item-schedule {
+        padding: 12px 8px !important;
+
+        .item-content-schedule {
+            padding-top: 0px !important;
+        }
+
+        .seperate-schedule {
+            display: none !important;
+        }
+
+        .time-detail {
+            text-align: left !important;
+            display: block !important;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem;
+        }
+
+        .address-schedule {
+            display: block !important;
+            padding: 1rem;
+            margin: auto 0px !important;
+        }
+    }
+
+
+}

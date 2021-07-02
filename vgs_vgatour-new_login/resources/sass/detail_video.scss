@@ -1,0 +1,50 @@
+.wrap-page {
+    text-align: center !important;
+}
+
+.content-page {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 2rem 6rem!important;
+    text-align: justify !important;
+
+    .title-news {
+
+    }
+
+    .describe-place {
+        padding: 1rem 1rem 1.05rem;
+        background-color: #EBEBEB;
+        margin: 1rem auto;
+    }
+
+    .iframe-video {
+        width: 100%;
+        height: auto;
+        min-height: 640px;
+    }
+
+    .author{
+        margin-top: 4rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .content-page {
+        padding: 0.5rem 0.5rem 4rem !important;
+
+
+        .iframe-video {
+            min-height: 480px;
+        }
+
+
+        .author{
+            margin-top: 2rem;
+        }
+    }
+
+}

@@ -1,0 +1,542 @@
+.hero-place {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 1300px;
+
+    img {
+        position: relative;
+        z-index: 1000;
+        width: 100%;
+        height: auto;
+        max-height: 600px;
+    }
+}
+
+.content-page {
+
+    .section-1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .leader-board {
+        position: relative;
+        padding: 30px 30px;
+        width: 55%;
+        height: 550px;
+        margin-bottom: 3rem;
+        border: 1px solid #B6b6b6;
+
+        .icon-live {
+            background-color: red;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            content: '';
+        }
+    }
+
+
+    .live {
+        width: 45%;
+        height: 550px;
+        background-color: #231f20;
+        color: white;
+        padding: 16px;
+
+        .header-live {
+            //margin-top: 16px;
+        }
+
+    }
+
+}
+
+.btn-show-all {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    margin-top: 10px;
+    border-radius: 10px !important;
+    border: 1px solid #B6b6b6 !important;
+
+    &:hover {
+        background: #262D48;
+        color: #fff;
+    }
+
+}
+
+.table-leader-board {
+
+    display: table;
+    width: 100%;
+
+    .tr-header {
+        display: table-row;
+
+        .th-header {
+            border-top: 1px solid #B6b6b6;
+            border-bottom: 1px solid #B6b6b6;
+            font-weight: bold;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        .th-pos {
+            text-align: left;
+        }
+
+        .th-golfer {
+            text-align: left;
+        }
+    }
+
+    .tr-golfer {
+        display: table-row;
+
+        .tb-cell {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .td-pos {
+            text-align: left;
+        }
+
+        .td-golfer {
+            display: flex;
+            flex-direction: row;
+
+            .avatar-country {
+                width: 20px;
+                height: auto;
+                margin-right: 8px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .tb-cell {
+        display: table-cell;
+    }
+
+}
+
+.tournament-news {
+
+    position: relative;
+    border: 1px solid #b6b6b6;
+    padding: 30px;
+
+    .title-news {
+        position: absolute;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 24px;
+        background-color: white;
+        top: -20px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+    }
+
+    .wrap-new {
+        margin-top: 36px;
+
+        .item-news {
+            text-align: left;
+
+            .thumbnail-post {
+                width: 100%;
+                margin-bottom: 0.4rem;
+
+                img {
+                    width: 100%;
+                    max-height: 200px;
+                    min-height: 200px;
+                    object-fit: cover;
+                }
+            }
+
+            .title-post {
+                font-weight: bold;
+                margin-bottom: 0.4rem;
+                text-align: justify;
+            }
+
+            .time-post {
+                font-style: italic;
+                font-size: 0.75rem;
+                margin-bottom: 0.4rem;
+            }
+
+            .des-content {
+                text-align: justify;
+            }
+
+        }
+    }
+
+}
+
+.tournament-video {
+
+    color: white !important;
+    background-color: #231f20;
+    padding: 30px;
+
+    .title-video {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin: 0px auto;
+    }
+
+    .wrap-video {
+        margin-top: 36px;
+
+        .item-video {
+            text-align: left;
+
+            .thumbnail-post {
+                width: 100%;
+                margin-bottom: 0.4rem;
+
+                img {
+                    width: 100%;
+                    max-height: 200px;
+                    min-height: 200px;
+                    object-fit: cover;
+                }
+            }
+
+            .title-post {
+                font-weight: bold;
+                margin-bottom: 0.4rem;
+                text-align: justify;
+            }
+
+            .time-post {
+                font-style: italic;
+                font-size: 0.75rem;
+                margin-bottom: 0.4rem;
+            }
+
+        }
+    }
+
+    .btn-show-all {
+        margin-top: 60px;
+        color: white;
+
+        &:hover{
+            background: white;
+            color: #231f20;
+        }
+
+    }
+
+}
+
+.tbl-ntt {
+
+    td {
+        width: 12.5%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .item-ntt {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        .logo-ntt {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+            display: inline-block;
+        }
+    }
+
+    &.tbl-mb {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hero-place {
+        max-width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .content-page {
+
+        .section-1 {
+            display: block;
+        }
+
+        .leader-board {
+            position: relative;
+            padding-left: 8px;
+            padding-right: 8px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #B6b6b6;
+
+            .icon-live {
+                background-color: red;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 16px;
+                left: 16px;
+                content: '';
+            }
+        }
+
+
+        .live {
+            width: 100%;
+            height: 500px;
+            background-color: #231f20;
+            color: white;
+            padding: 16px;
+
+            //.header-live {
+            //    margin-top: 16px;
+            //}
+
+        }
+
+    }
+
+    .btn-show-all {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        margin-top: 10px;
+        border-radius: 10px !important;
+        border: 1px solid #B6b6b6 !important;
+    }
+
+    .table-leader-board {
+
+        display: table;
+        width: 100%;
+
+        .tr-header {
+            display: table-row;
+
+            .th-header {
+                .hero-place {
+                    margin: 0 auto;
+                    width: 100%;
+                    height: auto;
+                    max-width: 1300px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                border-top: 1px solid #B6b6b6;
+                border-bottom: 1px solid #B6b6b6;
+                font-weight: bold;
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+
+            .th-pos {
+                text-align: left;
+            }
+
+            .th-golfer {
+                text-align: left;
+            }
+        }
+
+        .tr-golfer {
+            display: table-row;
+
+            .tb-cell {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .td-pos {
+                text-align: left;
+            }
+
+            .td-golfer {
+                display: flex;
+                flex-direction: row;
+
+                .avatar-country {
+                    width: 20px;
+                    height: auto;
+                    margin-right: 8px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .tb-cell {
+            display: table-cell;
+        }
+
+    }
+
+    .tournament-news {
+
+        position: relative;
+        border: 1px solid #b6b6b6;
+        padding-left: 8px;
+        padding-right: 8px;
+
+        .title-news {
+            position: absolute;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            background-color: white;
+            top: -10px;
+        }
+
+        .wrap-new {
+            margin-top: 1rem;
+
+            .item-news {
+                text-align: left;
+                margin-bottom: 2rem;
+
+                .thumbnail-post {
+                    width: 100%;
+                    margin-bottom: 0.4rem;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .title-post {
+                    font-weight: bold;
+                    margin-bottom: 0.4rem;
+                    text-align: justify;
+                }
+
+                .time-post {
+                    font-style: italic;
+                    font-size: 0.75rem;
+                    margin-bottom: 0.4rem;
+                }
+
+                .des-content {
+                    text-align: justify;
+                }
+
+            }
+        }
+
+    }
+
+    .tournament-video {
+
+        color: white !important;
+        background-color: #231f20;
+        padding: 2rem;
+
+        .title-video {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin: 0px auto;
+        }
+
+        .wrap-video {
+            margin-top: 2rem;
+
+            .item-video {
+                text-align: left;
+                margin-bottom: 2rem;
+
+                .thumbnail-post {
+                    width: 100%;
+                    margin-bottom: 0.4rem;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .title-post {
+                    font-weight: bold;
+                    margin-bottom: 0.4rem;
+                    text-align: justify;
+                }
+
+                .time-post {
+                    font-style: italic;
+                    font-size: 0.75rem;
+                    margin-bottom: 0.4rem;
+                }
+
+            }
+        }
+
+        .btn-show-all {
+            margin-top: 60px;
+            color: white;
+        }
+
+    }
+
+    .tbl-ntt {
+
+        td {
+            width: 12.5%;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
+        .item-ntt {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+
+            .logo-ntt {
+                //display: inline-block;
+                width: 80%;
+            }
+
+        }
+
+        &.tbl-mb {
+            display: table;
+        }
+    }
+
+    //.tbl-pc {
+    //    display: none;
+    //}
+
+}

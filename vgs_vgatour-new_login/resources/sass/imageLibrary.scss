@@ -1,0 +1,76 @@
+.content-page {
+
+    .tournament-image-library {
+
+        .item-image-library {
+            color: #000;
+            width: 100%;
+            position: relative;
+            border: 1px solid #b6b6b6;
+            padding: 60px 30px;
+
+            .title-image-library {
+
+                .facility_image-library-tournament {
+                    position: absolute;
+                    top: -3%;
+                    background-color: white;
+                    padding: 0px 20px;
+                    left: 5%;
+                }
+
+            }
+
+            .item-content-image-library {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+
+                li.wrap-image {
+
+                    list-style-type: none;
+                    flex: 0 0 auto;
+                    width: 200px;
+                    height: 200px;
+                    background-color: #dcdcdc;
+                    margin-right: 8px;
+                    display: flex;
+
+                    img {
+                        margin: auto;
+                        width: 100%;
+                        height: auto;
+                        max-height: 100%;
+                    }
+
+                }
+
+            }
+        }
+
+        .content-library {
+            display: flex;
+
+            .show-all {
+                border-radius: 5px;
+                border: 1px solid #686868;
+                vertical-align: middle;
+                display: flex;
+                margin-left: 16px;
+                padding-left: 4px;
+                padding-right: 4px;
+
+                .btn-show-all-image {
+                    margin: auto;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                }
+
+            }
+
+        }
+
+    }
+}

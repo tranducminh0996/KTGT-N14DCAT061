@@ -1,0 +1,119 @@
+.ticket-place {
+    .item-ticket {
+        position: relative;
+        margin-top: 4rem;
+        border-left: 1px solid #bcbcbc;
+        border-top: 1px solid #bcbcbc;
+        border-bottom: 1px solid #bcbcbc;
+        padding-bottom: 1rem;
+    }
+}
+
+.widget-ticket {
+
+    .icon-ticket {
+        background-color: #bcbcbc;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: -5px;
+        left: -5.5px;
+        content: '';
+    }
+
+    .header-ticket {
+        position: absolute;
+        top: -10px;
+        left: -5.5px;
+        background-color: white;
+        margin-left: 10px;
+
+        .title-ticket {
+            margin-left: 2rem;
+            font-weight: bold;
+            margin-right: 2rem;
+        }
+    }
+
+    .body-ticket {
+
+        margin-top: 3rem;
+        margin-left: 2rem;
+
+        .content-ticket {
+            display: flex;
+            flex-direction: row;
+
+            .view-ticket {
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-right: 4rem;
+            }
+
+            .name-image-ticket {
+                margin-bottom: 0.5rem;
+            }
+
+            .ticket-by {
+                font-size: 0.85rem;
+                font-style: italic;
+            }
+
+            .link-center-top {
+                padding: 0.3rem !important;
+                min-width: 250px;
+            }
+        }
+    }
+}
+
+
+.item-content-schedule {
+    border: 1px solid #b6b6b6;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 30px;
+
+    div {
+        margin: auto;
+        text-align: center;
+    }
+
+    .time-detail, .cost-schedule {
+        flex-grow: 1;
+    }
+
+    .address-schedule {
+        flex-grow: 2;
+        text-align: left;
+        margin: auto 40px !important;
+
+        p {
+            margin-bottom: 0.65rem;
+        }
+    }
+
+    .seperate-schedule {
+        background-color: #b6b6b6;
+        border-radius: 10px;
+        height: 60px;
+        width: 6px;
+        content: '';
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .select-date-ticket{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.btn-add-ticket{
+    margin-left: 2rem;
+}

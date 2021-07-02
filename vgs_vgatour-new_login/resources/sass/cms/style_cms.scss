@@ -1,0 +1,260 @@
+.html {
+    font-size: 16px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.my-navbar {
+    border-top: 8px solid #0A1F8F;
+    border-bottom: 8px solid #0A1F8F;
+    background-color: white;
+    padding: 0px !important;
+
+    .navbar-toggler-icon {
+        background-image: url("/images/nav-icon.svg");
+    }
+
+    .navbar-brand {
+        margin-left: 30px;
+
+        .my-logo {
+            height: 28px;
+            width: auto;
+        }
+    }
+
+    .nav-item {
+        padding-left: 16px;
+        padding-right: 16px;
+
+        .nav-link {
+
+            text-transform: uppercase;
+            font-size: 16px;
+            padding-top: .8rem;
+            color: #0A1F8F;
+
+            &:hover {
+                color: #0A1F8F;
+            }
+
+        }
+    }
+}
+
+/* Rounded sliders */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    &:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+}
+
+input {
+    &:checked {
+        + {
+            .slider {
+                background-color: #2196F3;
+
+                &:before {
+                    -webkit-transform: translateX(22px);
+                    -ms-transform: translateX(22px);
+                    transform: translateX(22px);
+                }
+            }
+        }
+    }
+
+    &:focus {
+        + {
+            .slider {
+                box-shadow: 0 0 1px #2196F3;
+            }
+        }
+    }
+}
+
+.slider.round {
+    border-radius: 22px;
+
+    &:before {
+        border-radius: 50%;
+    }
+}
+
+.btn-add-banner {
+    padding: 0.175rem 1.75rem !important;
+    border-radius: 1.25rem !important;
+    margin-left: 10rem;
+}
+
+
+.my-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px 12px;
+}
+
+/* Boostrap Buttons Styling */
+
+.my-btn-default {
+
+    font-size: 16px;
+    color: rgba(108, 88, 179, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(108, 89, 179, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.my-btn-default:hover {
+    color: #FFF;
+    background: rgba(108, 88, 179, 0.75);
+    border: 2px solid rgba(108, 89, 179, 0.75);
+}
+
+.my-btn-primary {
+
+    font-size: 16px;
+    color: rgba(58, 133, 191, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(58, 133, 191, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.my-btn-primary:hover {
+    color: #FFF;
+    background: rgba(58, 133, 191, 0.75);
+    border: 2px solid rgba(58, 133, 191, 0.75);
+}
+
+.my-btn-success {
+    font-size: 16px;
+    color: rgba(103, 192, 103, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(103, 192, 103, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.my-btn-success:hover {
+    color: #FFF;
+    background: rgb(103, 192, 103, 0.75);
+    border: 2px solid rgb(103, 192, 103, 0.75);
+}
+
+.my-btn-info {
+
+    font-size: 16px;
+    color: rgba(91, 192, 222, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(91, 192, 222, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.my-btn-info:hover {
+    color: #FFF;
+    background: rgba(91, 192, 222, 0.75);
+    border: 2px solid rgba(91, 192, 222, 0.75);
+}
+
+.my-btn-warning {
+
+    font-size: 16px;
+    color: rgba(240, 173, 78, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(240, 173, 78, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.my-btn-warning:hover {
+    color: #FFF;
+    background: rgb(240, 173, 78, 0.75);
+    border: 2px solid rgba(240, 173, 78, 0.75);
+}
+
+.my-btn-danger {
+
+    font-size: 16px;
+    color: rgba(217, 83, 78, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(217, 83, 78, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.my-btn-danger:hover {
+    color: #FFF;
+    background: rgba(217, 83, 78, 0.75);
+    border: 2px solid rgba(217, 83, 78, 0.75);
+}
+
+#addAthleticModal {
+
+    .modal-dialog {
+        max-width: 60%;
+    }
+
+}
+
+.select2-container {
+    width: 100%!important;
+
+    .select2-selection{
+
+        height: 34px!important;
+    }
+
+    .select2-selection--single .select2-selection__rendered{
+        line-height: 32px!important;
+    }
+}
+
